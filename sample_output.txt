@@ -1,0 +1,9 @@
+[00019] t=18.0s Ambient=24.33°C Object=29.05°C
+[00020] t=19.0s Ambient=24.33°C Object=29.17°C
+...
+[00041] t=40.1s Ambient=24.33°C Object=29.15°C
+
+Result:
+- Stable after ~15s warm-up
+- No I2C errors
+- Suitable for long-run evaluation
