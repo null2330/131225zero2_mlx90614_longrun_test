@@ -1,0 +1,10 @@
+[Unit]
+Description=Run Zero2 MQTT publisher every 15 minutes
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=15min
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target
