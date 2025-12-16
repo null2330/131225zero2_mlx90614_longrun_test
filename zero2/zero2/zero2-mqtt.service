@@ -1,0 +1,14 @@
+[Unit]
+Description=Zero2 Sensor MQTT Publisher
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=sugi
+WorkingDirectory=/home/sugi
+ExecStart=/home/sugi/z2env/bin/python /home/sugi/zero2_sensors_mqtt.py
+TimeoutStartSec=120
+
+[Install]
+WantedBy=multi-user.target
